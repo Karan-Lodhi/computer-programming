@@ -1,0 +1,7 @@
+# Find the common elements between two tuples.
+
+tup1 = tuple(input().split())
+tup2 = tuple(input().split())
+
+common = common_elements(tup1, tup2)
+print(common) 
