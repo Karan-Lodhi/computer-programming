@@ -1,0 +1,5 @@
+# Convert a tuple to a string.
+
+tup = tuple(input().split())
+string = str(tup)
+print(string)
