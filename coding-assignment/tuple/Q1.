@@ -1,0 +1,5 @@
+# Find the length of a tuple.
+
+tup = tuple()
+length = len(tup)
+print(length) 
