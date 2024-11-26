@@ -1,0 +1,11 @@
+# Write a Python program to capitalize the first letter of each word in a sentence.
+
+def capitalize_words(sentence):
+    words = sentence.split()
+    capitalized_words = [word.capitalize() for word in words]
+    return ' '.join(capitalized_words)
+
+sentence = input("Enter a sentence: ")
+result = capitalize_words(sentence)
+
+print("Capitalized sentence:", result)
