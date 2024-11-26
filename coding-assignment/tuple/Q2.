@@ -1,6 +1,6 @@
 # Concatenate two tuples.
 
-tup1 = tuple()
-tup2 = tuple()
+tup1 = tuple(input().split())
+tup2 = tuple(input().split())
 result = tup1 + tup2
 print(result)
