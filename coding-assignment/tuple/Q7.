@@ -1,0 +1,5 @@
+# Convert a list to a tuple.
+
+lst = list(input().split())
+tup = tuple(lst)
+print(tup)  
