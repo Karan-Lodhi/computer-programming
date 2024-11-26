@@ -1,0 +1,5 @@
+# Upper case the first letter in the given sentence.
+
+txt = input()
+x = txt.capitalize()
+print (x)
