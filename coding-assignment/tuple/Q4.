@@ -1,0 +1,6 @@
+# Count the occurrences of an element in a tuple.
+
+tup = tuple(input().split())
+a = input("Enter the element to count:" )
+count = tup.count(a)
+print(count)
