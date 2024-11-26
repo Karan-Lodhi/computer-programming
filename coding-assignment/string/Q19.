@@ -1,0 +1,10 @@
+# Write a Python program to swap cases of a given string.
+
+str = input()
+res = ""   
+for ch in str:
+   if ch.isupper():
+	   res += ch.lower()
+   else:
+	   res += ch.upper()           
+print(res)
