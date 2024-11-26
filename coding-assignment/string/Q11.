@@ -1,0 +1,5 @@
+# Write a Python program to remove all leading and trailing whitespaces from a string.
+
+string = input("Enter a string: ")
+trimmed_string = string.strip()
+print("String after removing leading and trailing whitespaces:", trimmed_string)
