@@ -1,0 +1,8 @@
+# Find the sum of all elements in a tuple.
+
+tup1 = tuple(input().split())
+sum = 0
+for i in range(len(tup1)):
+    sum += int(tup1[i])
+
+print(sum)
