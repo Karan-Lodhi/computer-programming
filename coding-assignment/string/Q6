@@ -1,0 +1,17 @@
+# Write a Python program to remove all duplicates from a string and return the result.
+def remove_duplicates(s):
+    result = ""
+    seen = set()
+    
+    for char in s:
+        if char not in seen:
+            result += char
+            seen.add(char)
+    
+    return result
+
+s = input("Enter a string: ")
+result = remove_duplicates(s)
+
+print(f"String after removing duplicates: {result}")
+
