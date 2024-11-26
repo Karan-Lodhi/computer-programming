@@ -1,0 +1,6 @@
+# Concatenate two tuples.
+
+tup1 = tuple()
+tup2 = tuple()
+result = tup1 + tup2
+print(result)
