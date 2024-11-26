@@ -1,5 +1,5 @@
 # Find the length of a tuple.
 
-tup = tuple()
+tup = tuple(input().split())
 length = len(tup)
 print(length) 
