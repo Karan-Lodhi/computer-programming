@@ -2,6 +2,6 @@
 
 lst = list(int, input().split())
 result = 1
-for num in numbers
+for num in lst:
    result *= num
 print("The product of the list is:", result)
