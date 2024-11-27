@@ -1,0 +1,14 @@
+# Write a  Python program to remove duplicates from a list.
+
+lst = list(map(int, input().split()))
+unique_numbers = []
+for num in lst:
+    is_duplicate = False
+    for unique in unique_numbers:
+        if num == unique:
+            is_duplicate = True
+            break
+    if not is_duplicate:
+        unique_numbers.append(num)
+print("List after removing duplicates:", unique_numbers)
+
