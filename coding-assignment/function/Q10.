@@ -1,0 +1,7 @@
+# Write a function apply_twice(func, x) that takes a function and a value, and applies the function twice to the value.
+
+def apply_twice(func, x):
+    return func(func(x))
+
+double = lambda x: x * 2
+print(apply_twice(input(), int(input()))) 
