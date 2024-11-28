@@ -1,0 +1,7 @@
+# Write a Python Program to Square Each Element of the List and Print List in Reverse Order.
+
+numbers = list(map(input().split()))
+numbers = [int(num) for num in numbers]
+squared_numbers = [x**2 for x in numbers]
+reversed_squared_numbers = squared_numbers[::-1]
+print("Squared and reversed list:", reversed_squared_numbers)
