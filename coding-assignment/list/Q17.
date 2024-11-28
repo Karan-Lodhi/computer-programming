@@ -1,0 +1,9 @@
+# Rotate a list to the left by a given number of positions.
+
+elements = list(map(input().split()))
+positions = int(input("Enter the number of positions to rotate to the left: "))
+if all(e.isdigit() for e in elements):
+    elements = [int(e) for e in elements]
+positions %= len(elements)
+rotated_list = elements[positions:] + elements[:positions]
+print("Rotated list:", rotated_list)
