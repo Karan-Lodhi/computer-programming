@@ -1,0 +1,6 @@
+# Check if all keys in subset = {'a', 'b'} are present in the dictionary data = {'a': 10, 'b': 20, 'c': 30}.
+
+data = {'a': 10, 'b': 20, 'c': 30}
+subset = {'a', 'b'}
+is_subset = subset.issubset(data.keys())
+print("Is subset:", is_subset)
