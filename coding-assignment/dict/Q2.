@@ -1,0 +1,6 @@
+# Find the key with the highest value in the dictionary {'a': 10, 'b': 20, 'c': 5}.
+
+data = {'a': 10, 'b': 20, 'c': 5}
+max_key = max(data, key=data.get)
+print("Key with maximum value:", max_key)
+
