@@ -1,0 +1,16 @@
+#  Count the number of odd and even numbers in a list.
+
+elements = list(map(input().split()))
+if all(e.isdigit() for e in elements):
+    elements = [int(e) for e in elements]
+odd_count = 0
+even_count = 0
+for element in elements:
+    if isinstance(element, int):
+        if element % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+
+print(f"Odd numbers count: {odd_count}")
+print(f"Even numbers count: {even_count}")
