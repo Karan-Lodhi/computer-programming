@@ -1,0 +1,6 @@
+# Write a Python Program to Remove All Occurrences of an Element From a Given List.
+
+elements = list(map(input().split()))
+element_to_remove = input("Enter the element to remove: ")
+filtered_elements = [x for x in elements if x != element_to_remove]
+print("List after removing all occurrences of", element_to_remove, ":", filtered_elements)
