@@ -1,0 +1,10 @@
+# Write a function remove_duplicates(lst) that removes duplicate elements from a list and returns the result.
+
+def remove_duplicates(lst):
+    unique = []
+    for item in lst:
+        if item not in unique:
+            unique.append(item)
+    return unique
+
+print(remove_duplicates(list(input().split())))
