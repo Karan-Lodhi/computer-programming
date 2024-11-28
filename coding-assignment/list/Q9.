@@ -1,0 +1,5 @@
+# Write a Python Program to Remove Empty List From a Given List.
+
+elements = eval(input().split())
+filtered_elements = [x for x in elements if x != []]
+print("List after removing empty lists:", filtered_elements)
