@@ -1,0 +1,12 @@
+# Group the words ['cat', 'dog', 'elephant', 'ant'] into a dictionary based on their lengths.
+
+words = ['cat', 'dog', 'elephant', 'ant']
+grouped = {}
+for word in words:
+    length = len(word)
+    if length in grouped:
+        grouped[length].append(word)
+    else:
+        grouped[length] = [word]
+
+print("Grouped by length:", grouped)
