@@ -1,0 +1,5 @@
+# Filter the dictionary data = {'a': 10, 'b': 20, 'c': 5} to keep only items with values greater than 10.
+
+data = {'a': 10, 'b': 20, 'c': 5}
+filtered_dict = {k: v for k, v in data.items() if v > 10}
+print("Filtered dictionary:", filtered_dict)
