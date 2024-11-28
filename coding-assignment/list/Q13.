@@ -1,0 +1,17 @@
+# Find the second-largest element in a list.
+
+elements = list(map(input().split()))
+if all(e.isdigit() for e in elements):
+    elements = [int(e) for e in elements]
+largest = second_largest = None
+for num in elements:
+    if largest is None or num > largest:
+        second_largest = largest
+        largest = num
+    elif second_largest is None or num > second_largest:
+        second_largest = num
+
+if second_largest is not None:
+    print("The second-largest element is:", second_largest)
+else:
+    print("The list does not have a second-largest element.")
