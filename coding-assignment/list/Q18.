@@ -1,0 +1,12 @@
+# Remove the first and last elements from a list.
+
+elements = list(map(input().split()))
+if all(e.isdigit() for e in elements):
+    elements = [int(e) for e in elements]
+
+if len(elements) > 1:
+    modified_list = elements[1:-1]
+else:
+    modified_list = [] 
+
+print("List after removing the first and last elements:", modified_list)
