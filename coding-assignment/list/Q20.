@@ -1,0 +1,10 @@
+# Find all pairs of numbers in a list that add up to a given target sum.
+
+numbers = list(map(int, input().split()))
+target = int(input("Enter the target sum: "))
+pairs = []
+for i in range(len(numbers)):
+    for j in range(i + 1, len(numbers)):
+        if numbers[i] + numbers[j] == target:
+            pairs.append((numbers[i], numbers[j]))
+print("Pairs with the target sum:", pairs)
