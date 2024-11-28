@@ -1,0 +1,11 @@
+# Write a function flatten_list(nested_list) that takes a nested list and returns a flattened version of it.
+python
+Copy code
+def flatten_list(nested_list):
+    flat = []
+    for sublist in nested_list:
+        for item in sublist:
+            flat.append(item)
+    return flat
+
+print(flatten_list(list(input().split())))
