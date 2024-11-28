@@ -1,0 +1,16 @@
+# Check if a list is a palindrome (reads the same forward and backward).
+
+elements = input("Enter list elements separated by spaces: ").split()
+if all(e.isdigit() for e in elements):
+    elements = [int(e) for e in elements]
+
+is_palindrome = True
+for i in range(len(elements) // 2):
+    if elements[i] != elements[len(elements) - i - 1]:
+        is_palindrome = False
+        break
+
+if is_palindrome:
+    print("The list is a palindrome.")
+else:
+    print("The list is not a palindrome.")
