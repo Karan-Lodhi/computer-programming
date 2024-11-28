@@ -1,0 +1,7 @@
+# Write a function introduce(name, age=18) that prints a message like "Hi, my name is <name> and I am <age> years old.".
+
+def introduce(name, age=18):
+    print(f"Hi, my name is {name} and I am {age} years old.")
+
+introduce("Alice", 25)
+introduce("Bob")
