@@ -1,0 +1,14 @@
+# Count the frequency of each element in a list without using a dictionary or Counter.
+
+elements = input().split()
+frequency = []
+for elem in elements:
+    count = 0
+    for e in elements:
+        if e == elem:
+            count += 1
+    if (elem, count) not in frequency:
+        frequency.append((elem, count))
+print("Frequency of elements:")
+for item in frequency:
+    print(f"{item[0]}: {item[1]}")
